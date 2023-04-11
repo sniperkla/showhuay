@@ -15,7 +15,7 @@ mongoose
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.error("Could not connect to MongoDB", err));
 
-app.get("/fetch", async (req, res) => {
+app.get("/huay", async (req, res) => {
   Schema.find()
     .then((result) => {
       res.status(200).send(result);
